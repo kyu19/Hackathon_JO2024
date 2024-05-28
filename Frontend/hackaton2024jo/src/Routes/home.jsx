@@ -5,7 +5,7 @@ function Home() {
   const [count, setCount] = useState(0)
 
   return (
-    <Typography>
+    <Typography color={"#d6c278"}>
         Accueil
     </Typography>
   )

@@ -9,22 +9,22 @@ function Menu() {
   // const [count, setCount] = useState(0)
 
   return (
-    <AppBar position="absolute">
+    <AppBar position="absolute" sx={{ bgcolor: "#d6c278" }}>
       <Toolbar variant="dense">
-        <Typography variant="h6" color="inherit" component="div">
+        <Typography variant="h6" fontWeight={'bold'} color="inherit" component="div">
           Hackathon JO 2024
         </Typography>
         <Box sx>
-          <Button sx={{ color: '#fff', marginLeft: 10 }} href='/home'>
+          <Button sx={{ color: '#fff', marginLeft: 10, fontWeight:'bold'}} href='/home'>
             Accueil
           </Button>
-          <Button sx={{ color: '#fff', marginLeft: 3 }} href='/predictions'>
+          <Button sx={{ color: '#fff', marginLeft: 3, fontWeight:'bold' }} href='/predictions'>
             Prédictions
           </Button>
-          <Button sx={{ color: '#fff', marginLeft: 3 }} href='/visualisations'>
+          <Button sx={{ color: '#fff', marginLeft: 3, fontWeight:'bold' }} href='/visualisations'>
             Visualisations
           </Button>
-          <Button sx={{ color: '#fff', marginLeft: 3 }} href='/questions'>
+          <Button sx={{ color: '#fff', marginLeft: 3, fontWeight:'bold' }} href='/questions'>
             Questions
           </Button>
         </Box>
