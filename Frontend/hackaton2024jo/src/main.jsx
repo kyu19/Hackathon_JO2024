@@ -38,9 +38,9 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
-    <Container sx={{marginTop:15}}>
+    <div style={{ minHeight:'85vh', marginTop:'10vh', backgroundImage: "url(https://img.olympics.com/images/image/private/t_16-9_1920/f_auto/primary/fruxzacvbdyyunj6fczo)", backgroundRepeat: 'no-repeat' }}>
       <RouterProvider router={router} />
-    </Container>
+    </div>
     
   </React.StrictMode>,
 )
