@@ -5,9 +5,13 @@ function Home() {
   const [count, setCount] = useState(0)
 
   return (
-    <Typography variant='h1' color={"#d6c278"}>
-        Accueil
-    </Typography>
+    <>
+      <div style={{ height: '55vh', display: 'flex', alignItems: 'end', marginLeft:'3vw' }}>
+        <Typography variant="h3" color='black' sx={{background:'white', padding:'10px 25px' , borderRadius:'35px'}}>
+          Bienvenue aux JO Paris 2024
+        </Typography>
+      </div>
+    </>
   )
 }
 
