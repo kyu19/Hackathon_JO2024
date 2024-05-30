@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 from app.db import get_db_connection
-from app.routers import  data
+from app.routes import router
 from fastapi.middleware.cors import CORSMiddleware
-
 
 app = FastAPI()
 
@@ -15,12 +14,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-# app.include_router(athletes.router, prefix="/athletes", tags=["Athletes"])
-# app.include_router(medals.router, prefix="/medals", tags=["Medals"])
-# app.include_router(results.router, prefix="/results", tags=["Results"])
-# app.include_router(hosts.router, prefix="/hosts", tags=["Hosts"])
-app.include_router(data.router, prefix="/data", tags=["Data"])
-#app.include_router(predictions.router, prefix="/predictions", tags=["Predictions"])
+
+app.include_router(router, prefix="/data", tags=["Data"])
 
 @app.get("/")
 def read_root():
