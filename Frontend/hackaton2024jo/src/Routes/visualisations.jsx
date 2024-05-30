@@ -12,7 +12,7 @@ function Visualisations() {
           <Typography variant='h3' component='span' color={"#ab8600"}>
             La Répartition des Jeux Olympiques par Pays
           </Typography>
-          <Typography variant='body1' padding='15px' color={"#ab8600"} padding='15px'>
+          <Typography variant='body1' padding='15px' color={"#ab8600"} >
 
             Depuis leur renaissance moderne en 1896, les Jeux Olympiques (JO) ont été accueillis par divers pays à travers le monde, offrant à chaque nation une opportunité unique de briller sur la scène mondiale. Cependant, la répartition des Jeux n'a pas été équitable, certains pays ayant eu l'honneur de les organiser plus fréquemment que d'autres.<br />
 
@@ -40,7 +40,7 @@ function Visualisations() {
             Pourquoi un Top Trois Régulier aux JO ?
           </Typography>
 
-          <Typography variant='body1' padding='15px' color={"#ab8600"} padding='15px'>
+          <Typography variant='body1' padding='15px' color={"#ab8600"} >
 
             La domination de la Russie, de la Chine et des États-Unis aux Jeux Olympiques s'explique par plusieurs facteurs clés. Ces nations investissent massivement dans le sport, combinant financements publics et privés. Les États-Unis bénéficient de l'appui des universités avec des installations de classe mondiale et des bourses sportives. La Chine a instauré des programmes sportifs nationaux intensifs depuis les années 1980, tandis que la Russie continue de soutenir le sport avec des fonds étatiques et des infrastructures sophistiquées. <br />
 
