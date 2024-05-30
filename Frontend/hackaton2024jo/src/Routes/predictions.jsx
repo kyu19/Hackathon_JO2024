@@ -121,7 +121,7 @@ function Predictions() {
   );
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/predictions')
+    axios.get('https://hackathon2024jo-backend-publication.onrender.com/predictions')
       .then(response => {
         response.data.predictions.sort(() => stableSort(predictions, getComparator(order, orderBy)))
         setPredictions(response.data.predictions);
@@ -132,19 +132,7 @@ function Predictions() {
 
   return (
     <>
-      <Typography variant="h4" color={"#d6c278"} >
-        Predictions
-      </Typography>
-      {/* <ReactCountryFlag countryCode="FR" />
-      <ReactCountryFlag
-        countryCode="FR"
-        svg
-        cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/1x1/"
-        cdnSuffix="svg"
-        title="FR"
-      /> */}
-
-      <Container sx={{ marginTop: 10 }}>
+      <Container>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: 700 }} aria-label="customized table">
             <EnhancedTableHead

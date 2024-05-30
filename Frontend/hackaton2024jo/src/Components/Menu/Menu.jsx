@@ -41,8 +41,8 @@ function Menu() {
                   <Button variant='outlined' sx={{ color: '#fff', fontWeight: 'bold' }} href='/visualisations'>
                     Visualisations
                   </Button>
-                  <Button variant='outlined' sx={{ color: '#fff', fontWeight: 'bold' }} href='/questions'>
-                    Questions
+                  <Button variant='outlined' sx={{ color: '#fff', fontWeight: 'bold' }} href='/about'>
+                    A propos de nous
                   </Button>
                 </Box>
               </Drawer>
@@ -58,14 +58,13 @@ function Menu() {
               <Button sx={{ color: '#fff', marginLeft: 3, fontWeight: 'bold' }} href='/visualisations'>
                 Visualisations
               </Button>
-              <Button sx={{ color: '#fff', marginLeft: 3, fontWeight: 'bold' }} href='/questions'>
-                Questions
+              <Button sx={{ color: '#fff', marginLeft: 3, fontWeight: 'bold' }} href='/about'>
+                A propos de nous
               </Button>
             </Box>
           )}
         </Toolbar>
       </AppBar>
-
     </>
 
   )
