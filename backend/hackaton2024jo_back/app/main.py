@@ -9,7 +9,7 @@ app = FastAPI()
 # app.include_router(results.router, prefix="/results", tags=["Results"])
 # app.include_router(hosts.router, prefix="/hosts", tags=["Hosts"])
 app.include_router(data.router, prefix="/data", tags=["Data"])
-# app.include_router(predictions.router, prefix="/predictions", tags=["Predictions"])
+#app.include_router(predictions.router, prefix="/predictions", tags=["Predictions"])
 
 @app.get("/")
 def read_root():
@@ -32,3 +32,15 @@ def test_db_connection():
             return {"message": f"Erreur lors de l'exécution de la requête: {str(e)}"}
     else:
         return {"message": "Échec de la connexion à la base de données"}
+
+@app.get("/predictions")
+def get_predictions():
+    conn = get_db_connection()
+    if conn:
+        cursor = conn.cursor(dictionary=True)
+        cursor.execute("SELECT * FROM Predictions")
+        result = cursor.fetchall()
+        conn.close()
+        return {"data": result}
+    else:
+        return {"error": "Failed to connect to the database"}

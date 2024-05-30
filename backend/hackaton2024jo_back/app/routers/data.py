@@ -50,3 +50,14 @@ def get_athletes():
         return df.to_dict(orient='records')
     else:
         return {"error": "Failed to connect to the database"}
+
+@router.get("/predictions")
+def get_predictions():
+    conn = get_db_connection()
+    if conn:
+        query = "SELECT * FROM predictions"
+        df = query_to_dataframe(query, conn)
+        conn.close()
+        return df.to_dict(orient='records')
+    else:
+        return {"error": "Failed to connect to the database"}
