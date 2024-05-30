@@ -1,9 +1,20 @@
 from fastapi import FastAPI
 from app.db import get_db_connection
 from app.routers import  data
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
 
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # app.include_router(athletes.router, prefix="/athletes", tags=["Athletes"])
 # app.include_router(medals.router, prefix="/medals", tags=["Medals"])
 # app.include_router(results.router, prefix="/results", tags=["Results"])
@@ -41,6 +52,6 @@ def get_predictions():
         cursor.execute("SELECT * FROM Predictions")
         result = cursor.fetchall()
         conn.close()
-        return {"data": result}
+        return {"predictions": result}
     else:
         return {"error": "Failed to connect to the database"}

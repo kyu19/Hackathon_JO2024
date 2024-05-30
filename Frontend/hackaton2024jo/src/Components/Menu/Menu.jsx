@@ -3,6 +3,7 @@ import AppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import { Box, Button } from '@mui/material'
+import axios from 'axios';
 import './Menu.css'
 
 function Menu() {
@@ -22,15 +23,16 @@ function Menu() {
             Prédictions
           </Button>
           <Button sx={{ color: '#fff', marginLeft: 3, fontWeight:'bold' }} href='/visualisations'>
-            Visualisations
+            Visualisation
           </Button>
-          <Button sx={{ color: '#fff', marginLeft: 3, fontWeight:'bold' }} href='/questions'>
-            Questions
+          <Button sx={{ color: '#fff', marginLeft: 3, fontWeight:'bold' }} href='/about'>
+            A propos
           </Button>
         </Box>
       </Toolbar>
     </AppBar>
   )
 }
+
 
 export default Menu

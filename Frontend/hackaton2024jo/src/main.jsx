@@ -9,8 +9,8 @@ import './index.css'
 import Home from './Routes/home.jsx';
 import Predictions from './Routes/predictions.jsx';
 import { Container } from '@mui/material';
-import Questions from './Routes/questions.jsx';
 import Visualisations from './Routes/visualisations.jsx';
+import About from './Routes/about.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,12 +26,12 @@ const router = createBrowserRouter([
     element: <Predictions />,
   },
   {
-    path: "/questions",
-    element: <Questions />,
-  },
-  {
     path: "/visualisations",
     element: <Visualisations />,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
 ]);
 
