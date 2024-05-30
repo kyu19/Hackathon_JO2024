@@ -32,7 +32,7 @@ function Visualisations() {
             Cette évolution indique une volonté d'élargir la portée géographique des Jeux et d'inclure davantage de régions dans cette célébration mondiale du sport.
           </Typography>
 
-          <img src='./nbJOPays.png'></img>
+          <img style={{width:'50%'}} src='./nbJOPays.png'></img>
         </div>
 
         <div class="top3" style={{ backgroundColor: '#ffffffdb', width: '90%', margin: '5vh auto', padding: '20px', borderRadius: '25px' }}>
