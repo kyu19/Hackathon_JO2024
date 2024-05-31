@@ -15,4 +15,5 @@ https://www.notion.so/JO-56b2cd618e4c42e8966ad88409e6f140?pvs=4
 https://hackathon2024jo-backend-publication.onrender.com/docs
 
 #### WebApp
+_(Si vous souhaitez afficher correctement le tableau des prédictions, veuillez cliquer sur une des colonnes... cela peut prendre quelques secondes à se charger)_
 https://hackathon2024jomia12.netlify.app/
